@@ -1,0 +1,22 @@
+﻿  GolfUET2019.cpp
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\CommonFunction.h(85,27): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\CommonFunction.h(86,27): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\CommonFunction.h(87,37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\CommonFunction.h(88,37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\CommonFunction.h(124,10): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\CommonFunction.h(125,10): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\CommonFunction.h(146,30): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\CommonFunction.h(147,30): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\Ball.h(25,20): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\GolfUET2019.cpp(89,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\GolfUET2019.cpp(89,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\GolfUET2019.cpp(92,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\GolfUET2019.cpp(92,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\GolfUET2019.cpp(123,19): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\GolfUET2019.cpp(123,15): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\GolfUET2019.cpp(128,19): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\GolfUET2019.cpp(128,15): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\GolfUET2019.cpp(208,77): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\GolfUET2019.cpp(208,41): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Hoang Bui\source\repos\GolfUET2019\GolfUET2019\GolfUET2019.cpp(289,36): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  GolfUET2019.vcxproj -> C:\Users\Hoang Bui\source\repos\GolfUET2019\x64\Debug\GolfUET2019.exe
