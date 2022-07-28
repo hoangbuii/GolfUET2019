@@ -32,8 +32,8 @@
 *.app
 
 .vscode/*
-.x64/*
+x64/*
 
 *.vcxproj
 *.vcxproj.user
-*.vcxproj.user
+*..vcxproj.filters
