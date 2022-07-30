@@ -99,13 +99,40 @@ void Ball::update(double timer, bool mouseDown, bool mousePressed, vector<Block>
         yDirection = yVelocity / abs(yVelocity);
 
 
-        if (getXPos() > (SCREEN_WIDTH - DEFAULT_SIDE_FRAME * 4)) {
-            powerBar.at(0).setPos(getXPos() - (DEFAULT_SIDE_FRAME + 8), getYPos() - DEFAULT_SIDE_FRAME);
-            powerBar.at(1).setPos(getXPos() - (DEFAULT_SIDE_FRAME + 8) + 4, getYPos() + 4  - DEFAULT_SIDE_FRAME * powerBar.at(1).getHScale());
+        if (getXPos() > (SCREEN_WIDTH / 2)) 
+        {
+            if (getYPos() < DEFAULT_SIDE_FRAME) 
+            {
+                powerBar.at(0).setPos(getXPos() - (DEFAULT_SIDE_FRAME + 8), getYPos());
+                powerBar.at(1).setPos(getXPos() - (DEFAULT_SIDE_FRAME + 8) + 4, getYPos() + 4 - DEFAULT_SIDE_FRAME + DEFAULT_SIDE_FRAME * powerBar.at(1).getHScale());
+            }
+            else if (getYPos() > (SCREEN_HEIGHT - DEFAULT_SIDE_FRAME)) {
+                powerBar.at(0).setPos(getXPos() - (DEFAULT_SIDE_FRAME + 8), getYPos() - DEFAULT_SIDE_FRAME * 1.5);
+                powerBar.at(1).setPos(getXPos() - (DEFAULT_SIDE_FRAME + 8) + 4, getYPos() + 4 - DEFAULT_SIDE_FRAME * powerBar.at(1).getHScale() - DEFAULT_SIDE_FRAME * 0.5);
+            }
+            else
+            {
+                powerBar.at(0).setPos(getXPos() - (DEFAULT_SIDE_FRAME + 8), getYPos() - DEFAULT_SIDE_FRAME);
+                powerBar.at(1).setPos(getXPos() - (DEFAULT_SIDE_FRAME + 8) + 4, getYPos() + 4 - DEFAULT_SIDE_FRAME * powerBar.at(1).getHScale());
+            }
         }
-        else {
-            powerBar.at(0).setPos(getXPos() + (DEFAULT_SIDE_FRAME + 8), getYPos() - DEFAULT_SIDE_FRAME);
-            powerBar.at(1).setPos(getXPos() + (DEFAULT_SIDE_FRAME + 8) + 4, getYPos() + 4 - DEFAULT_SIDE_FRAME * powerBar.at(1).getHScale());
+        else 
+        {
+            if (getYPos() < DEFAULT_SIDE_FRAME)
+            {
+                powerBar.at(0).setPos(getXPos() + (DEFAULT_SIDE_FRAME + 8), getYPos());
+                powerBar.at(1).setPos(getXPos() + (DEFAULT_SIDE_FRAME + 8) + 4, getYPos() + 4 - DEFAULT_SIDE_FRAME + DEFAULT_SIDE_FRAME * powerBar.at(1).getHScale());
+            }
+            else if (getYPos() > (SCREEN_HEIGHT - DEFAULT_SIDE_FRAME)) {
+                powerBar.at(0).setPos(getXPos() + (DEFAULT_SIDE_FRAME + 8), getYPos() - DEFAULT_SIDE_FRAME * 1.5);
+                powerBar.at(1).setPos(getXPos() + (DEFAULT_SIDE_FRAME + 8) + 4, getYPos() + 4 - DEFAULT_SIDE_FRAME * powerBar.at(1).getHScale() - DEFAULT_SIDE_FRAME * 0.5);
+            }
+            else
+            {
+                powerBar.at(0).setPos(getXPos() + (DEFAULT_SIDE_FRAME + 8), getYPos() - DEFAULT_SIDE_FRAME);
+                powerBar.at(1).setPos(getXPos() + (DEFAULT_SIDE_FRAME + 8) + 4, getYPos() + 4 - DEFAULT_SIDE_FRAME * powerBar.at(1).getHScale());
+            }
+      
         }
 
         if (velocity > 1) {
