@@ -98,8 +98,15 @@ void Ball::update(double timer, bool mouseDown, bool mousePressed, vector<Block>
         xDirection = xVelocity / abs(xVelocity);
         yDirection = yVelocity / abs(yVelocity);
 
-        powerBar.at(0).setPos(getXPos() + (DEFAULT_SIDE_FRAME + 8), getYPos() - DEFAULT_SIDE_FRAME);
-        powerBar.at(1).setPos(getXPos() + (DEFAULT_SIDE_FRAME + 8) + 4, getYPos() + 4  - DEFAULT_SIDE_FRAME * powerBar.at(1).getHScale());
+
+        if (getXPos() > (SCREEN_WIDTH - DEFAULT_SIDE_FRAME * 4)) {
+            powerBar.at(0).setPos(getXPos() - (DEFAULT_SIDE_FRAME + 8), getYPos() - DEFAULT_SIDE_FRAME);
+            powerBar.at(1).setPos(getXPos() - (DEFAULT_SIDE_FRAME + 8) + 4, getYPos() + 4  - DEFAULT_SIDE_FRAME * powerBar.at(1).getHScale());
+        }
+        else {
+            powerBar.at(0).setPos(getXPos() + (DEFAULT_SIDE_FRAME + 8), getYPos() - DEFAULT_SIDE_FRAME);
+            powerBar.at(1).setPos(getXPos() + (DEFAULT_SIDE_FRAME + 8) + 4, getYPos() + 4 - DEFAULT_SIDE_FRAME * powerBar.at(1).getHScale());
+        }
 
         if (velocity > 1) {
             velocity = 1;
